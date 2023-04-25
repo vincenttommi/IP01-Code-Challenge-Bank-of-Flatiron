@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const Addform = () => {
 
-const[date, setdate] = useState("");
+const[date, setDate] = useState("");
 const[description, setDescription]=useState(""); 
 const[category, setCategory]=useState("");
 const[amount,SetAmount]=useState("");
@@ -22,7 +22,7 @@ const newtransaction = {
 
 
 
-fetch("http://localhost:3001/transactions", {
+fetch("http://localhost:3000/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -32,9 +32,9 @@ fetch("http://localhost:3001/transactions", {
       .then(res => res.json())
       .then(() => {
         console.log("New Transaction added");
-        setDate,("");
+        setDate("");
         setDescription("");
-        setcategory("");
+        setCategory("");
         SetAmount("");
       })
       .catch(error => console.error(error));
