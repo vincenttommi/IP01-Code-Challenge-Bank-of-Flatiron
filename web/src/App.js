@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import TransactionFilter from './components/Transaction';
-import TransactionList from './components/TransactionLists';
+import TransactionList from './components/TransactionTable';
 
 function App() {
   const [transactions, setTransactions] = useState([]);
