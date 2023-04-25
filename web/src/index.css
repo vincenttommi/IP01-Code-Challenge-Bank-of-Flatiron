@@ -21,3 +21,17 @@ table {
   align-items:center ;
 
 }
+
+#vin{
+
+  text-align: center;
+  color:black;
+}
+
+#btn{
+
+  color: #ccc;
+  background-color:#FF0000;
+  border:1px solid;
+  border-radius: 5px;
+}

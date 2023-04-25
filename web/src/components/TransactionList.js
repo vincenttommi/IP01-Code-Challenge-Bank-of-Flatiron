@@ -23,7 +23,7 @@ function TransactionList() {
 
   return (
     <div>
-      <h2>Transactions</h2>
+      <h2 id='vin'>Transactions</h2>
       <table>
         <thead>
           <tr>
@@ -41,7 +41,7 @@ function TransactionList() {
               <td>{transaction.description}</td>
               <td>{transaction.category}</td>
               <td>{transaction.amount}</td>
-              <td><button onClick={() => handleDelete(transaction.id)}>Delete</button></td>
+              <td><button id='btn' onClick={() => handleDelete(transaction.id)}>Delete</button></td>
             </tr>
           ))}
         </tbody>

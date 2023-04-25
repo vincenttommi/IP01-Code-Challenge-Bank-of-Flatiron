@@ -89,7 +89,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Transactions</h1>
+      
       {transactions.length > 0 ? (
         <TransactionTable transactions={transactions} />
       ) : (
