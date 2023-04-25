@@ -4,7 +4,7 @@ import TransactionList from './components/TransactionList';
 function App() {
   return (
     <div>
-      <h1>My Budget App</h1>
+      <h1>Mzee Budget</h1>
       <TransactionList />
     </div>
   );

@@ -6,20 +6,20 @@ function TransactionList() {
   useEffect(() => {
     fetch(' http://localhost:3000/transactions')
       .then(response => response.json())
-      .then(data => setTransactions(data.transactions));
-  }, []);
+      .then(data => setTransactions(data));
+  },[]);
 
   return (
     <div>
       <h2>Transactions</h2>
       <ul>
         {transactions.map(transaction => (
-          <li key={transaction.id}>
-            <div>{transaction.date}</div>
-            <div>{transaction.description}</div>
-            <div>{transaction.category}</div>
-            <div>{transaction.amount}</div>
-          </li>
+          <tr key={transaction.id}>
+            <td>{transaction.date}</td>
+            <td>{transaction.description}</td>
+            <td>{transaction.category}</td>
+            <td>{transaction.amount}</td>
+          </tr>
         ))}
       </ul>
     </div>
