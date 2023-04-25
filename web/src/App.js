@@ -1,5 +1,5 @@
 import React from 'react';
-import TransactionList from './TransactionList';
+import TransactionList from './components/TransactionList';
 
 function App() {
   return (

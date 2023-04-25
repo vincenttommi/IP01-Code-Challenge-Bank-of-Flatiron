@@ -4,7 +4,7 @@ function TransactionList() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    fetch('/api/transactions')
+    fetch(' http://localhost:3000/transactions')
       .then(response => response.json())
       .then(data => setTransactions(data.transactions));
   }, []);
