@@ -22,7 +22,7 @@ const newtransaction = {
 
 
 
-fetch("http://localhost:3000/transactions", {
+fetch("http://localhost:5000/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Addform from "./Addform";
 
-const TransactionTable = ({ transactions }) => {
+const TransactionTable = ({ transactions, onDelete }) => {
   const [categoryFilter, setCategoryFilter] = useState("");
   const [filteredTransactions, setFilteredTransactions] = useState([]);
 
@@ -20,6 +20,20 @@ const TransactionTable = ({ transactions }) => {
   const handleChange = (event) => {
     setCategoryFilter(event.target.value);
   };
+
+
+
+
+  const handleDelete = (id) => {
+    fetch(`http://localhost:5000/transactions/${id}`, {
+      method: 'DELETE'
+    })
+      .then(() => {
+        onDelete(id);
+      })
+      .catch(error => console.error(error));
+  };
+
 
   return (
     <div>
@@ -51,6 +65,7 @@ const TransactionTable = ({ transactions }) => {
               <td>{transaction.description}</td>
               <td>{transaction.category}</td>
               <td>{transaction.amount}</td>
+              <td><button onClick={() => handleDelete(transaction.id)}>Delete</button></td>
             </tr>
           ))}
         </tbody>
