@@ -48,11 +48,14 @@ table {
 thead {
   background-color: #F2F2F2;
   font-weight: bold;
+  color:red;
 }
 th, td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  color:black;
+  font-size:10px;
 }
 tr:hover {
   background-color: #F5F5F5;

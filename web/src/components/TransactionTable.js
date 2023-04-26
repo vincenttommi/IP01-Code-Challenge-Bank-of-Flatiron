@@ -25,7 +25,7 @@ const TransactionTable = ({ transactions, onDelete }) => {
 
 
   const handleDelete = (id) => {
-    fetch(`https://my-json-server.typicode.com/TammyBriggs/Phase-2-week-1-code-challenge/transactions/${id}`, {
+    fetch(`https://react-40re.onrender.com/transactions/${id}`, {
       method: 'DELETE'
     })
       .then(() => {

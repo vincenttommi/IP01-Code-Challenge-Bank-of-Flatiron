@@ -21,7 +21,7 @@ const newtransaction = {
 
 
 
-fetch("https://my-json-server.typicode.com/vincenttommi/IP01-Code-Challenge-Bank-of-Flatiron/transactions", {
+fetch("https://react-40re.onrender.com/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

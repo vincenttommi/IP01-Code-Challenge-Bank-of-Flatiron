@@ -4,13 +4,13 @@ function TransactionList() {
   const [transactions, setTransactions] = useState([]);
 
   useEffect(() => {
-    fetch('https://my-json-server.typicode.com/vincenttommi/IP01-Code-Challenge-Bank-of-Flatiron/transactions')
+    fetch('https://react-40re.onrender.com/transactions')
       .then(response => response.json())
       .then(data => setTransactions(data));
   },[]);
 
   const handleDelete = (id) => {
-    fetch(`https://my-json-server.typicode.com/vincenttommi/IP01-Code-Challenge-Bank-of-Flatiron/transactions/${id}`, {
+    fetch(`https://react-40re.onrender.com/transactions/${id}`, {
       method: 'DELETE'
     })
       .then(() => {
