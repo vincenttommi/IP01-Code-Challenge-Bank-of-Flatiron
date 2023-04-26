@@ -12,7 +12,6 @@ function App() {
       <Addform />
       <TransactionList />
       <TransactionTable/>
-      <addform/>
     </div>
   );
 }

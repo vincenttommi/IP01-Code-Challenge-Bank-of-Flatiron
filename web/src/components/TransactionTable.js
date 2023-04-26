@@ -25,7 +25,7 @@ const TransactionTable = ({ transactions, onDelete }) => {
 
 
   const handleDelete = (id) => {
-    fetch(`https://my-json-server.typicode.com/vincenttommi/IP01-Code-Challenge-Bank-of-Flatiron/transactions/${id}`, {
+    fetch(`https://my-json-server.typicode.com/TammyBriggs/Phase-2-week-1-code-challenge/transactions/${id}`, {
       method: 'DELETE'
     })
       .then(() => {
@@ -80,7 +80,7 @@ const App = () => {
   useEffect(() => {
     // simulate fetching data from an API
     const fetchData = async () => {
-      const response = await fetch("https://my-json-server.typicode.com/vincenttommi/IP01-Code-Challenge-Bank-of-Flatiron/transactions");
+      const response = await fetch("transactions.json");
       const data = await response.json();
       setTransactions(data.transactions);
     };
