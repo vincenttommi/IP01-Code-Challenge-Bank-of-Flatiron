@@ -22,7 +22,7 @@ const newtransaction = {
 
 
 
-fetch("http://localhost:5000/transactions", {
+fetch("https://my-json-server.typicode.com/vincenttommi/IP01-Code-Challenge-Bank-of-Flatiron/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
