@@ -77,7 +77,7 @@ fetch("http://localhost:5000/transactions", {
          
         />
       </label>
-      <button   type="submit">Submit</button>
+      <button  id='tn'  type="submit">Submit</button>
     </form>
 
   )

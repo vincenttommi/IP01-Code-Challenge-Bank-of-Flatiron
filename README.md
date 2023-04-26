@@ -8,3 +8,6 @@
 
 # instructions below will walk you through the process of ideation and planning your app: deciding on your user interface, planning how the information will be laid out on the page
 # we have  db.json file that we are fetching data from
+
+# https://vincenttommi.github.io/IP01-Code-Challenge-Bank-of-Flatiron/
+# 
