@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Addform from "./Addform";
+
 
 const TransactionTable = ({ transactions, onDelete }) => {
   const [categoryFilter, setCategoryFilter] = useState("");
@@ -26,7 +26,7 @@ const TransactionTable = ({ transactions, onDelete }) => {
 
   const handleDelete = (id) => {
     fetch(`https://react-40re.onrender.com/transactions/${id}`, {
-      method: 'DELETE'
+      method: 'DELETE',
     })
       .then(() => {
         onDelete(id);

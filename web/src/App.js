@@ -1,6 +1,6 @@
 import React from 'react';
 import TransactionList from './components/TransactionList';
-import TransactionTable from './components/TransactionTable'
+import TransactionTable from './components/TransactionTable';
 
 import './App.css';
 import Addform from './components/Addform';

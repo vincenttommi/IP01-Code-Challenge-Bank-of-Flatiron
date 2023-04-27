@@ -19,12 +19,13 @@ const newtransaction = {
 };
 
 
-
+console.log(newtransaction);
 
 fetch("https://react-40re.onrender.com/transactions", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
+        // 'Accept':'application/json'
       },
       body: JSON.stringify(newtransaction)
     })
@@ -45,25 +46,31 @@ fetch("https://react-40re.onrender.com/transactions", {
   return (
 <form onSubmit={handleSubmit} className="transaction-form">
       <label>
-        Date:
+        Date: 
         <input
-          type="text"
+           required
+          type="date"
           value={date}
+          onChange={(e) => setDate(e.target.value)}
         />
       </label>
       <label>
         Description:
         <input
+           required
           type="text"
           value={description}
+          onChange={(e) => setDescription(e.target.value)}
         />
       </label>
-
+         
       <label>
       Category:
         <input
+           required
           type="text"
           value={category}
+          onChange={(e) => setCategory(e.target.value)}
          
         />
       </label>
@@ -71,12 +78,14 @@ fetch("https://react-40re.onrender.com/transactions", {
       <label>
       Amount
         <input
+          required
           type="text"
           value={amount}
+          onChange={(e) => SetAmount(e.target.value)}
          
         />
       </label>
-      <button  id='tn'  type="submit">Submit</button>
+      <button  id='tn' required  type="submit">Submit</button>
     </form>
 
   )

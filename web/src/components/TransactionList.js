@@ -51,3 +51,4 @@ function TransactionList() {
 }
 
 export default TransactionList;
+<button id='btn' onClick={() => handleDelete(transaction.id)}>Delete</button>
